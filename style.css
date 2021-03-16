@@ -1,0 +1,164 @@
+
+/* Base styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #CDCDCD;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	overflow-x: hidden;
+	max-width: 100vw;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+	margin-top: 7.5em;
+}
+
+section {
+	min-height: 100vw;
+	padding: 2em 0;
+}
+
+.container {
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+
+
+/* Grid */
+
+.grid {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+.columns {
+	padding: 0.5em;
+}
+
+@media (min-width: 40em) {
+
+
+
+}
+
+
+
+/* Utilities */
+.center {
+	text-align: center;
+}
+
+
+
+/* Typography */
+
+@media (min-width: 40em) {
+	h2 {
+		font-size: 4em;
+		font-weight: 700;
+}
+
+	h1 {
+		position: relative;
+		bottom: 300px;
+	}
+
+	p {
+		font-size: 20px;
+
+	}
+
+}
+
+
+
+/* Nav */
+
+header {
+	background: #66E8FF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+}
+
+header .container {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+}
+
+.profilepic {
+	max-width: 500px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 10px 10px 5px grey;
+	position: relative;
+	left: 550px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 25px;
+
+	position: relative;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: #444;
+
+	position: absolute;
+	top: 0;
+
+	transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before {
+	width: 100%
+}
+
+
+/* Images */
+
+.geotype {
+
+}
